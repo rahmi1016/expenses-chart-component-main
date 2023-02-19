@@ -1,0 +1,205 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(27, 66%, 92%);
+  font-family: "DM Sans", sans-serif;
+  margin-top: 12.5vh;
+}
+
+.container-one {
+  width: 540px;
+  height: 130px;
+  border: none;
+  border-radius: 20px;
+  margin-bottom: 25px;
+  background-color: hsl(10, 79%, 65%);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.text {
+  width: 300px;
+  text-align: left;
+  padding-left: 40px;
+  color: hsl(33, 100%, 98%);
+}
+
+.text p {
+  margin-bottom: 8px;
+  color: hsl(33, 100%, 98%);
+  font-size: 20px;
+}
+
+.text h1 {
+  margin-top: 0;
+  font-size: 36px;
+}
+
+.shape {
+  width: 230px;
+  height: 130px;
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  align-items: center;
+}
+
+.circle-two {
+  height: 50px;
+  width: 50px;
+  background-color: hsl(25, 47%, 15%);
+  border-radius: 50%;
+  z-index: 1;
+  transform: translateX(-22.5px);
+}
+
+.circle-one {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: 2.5px solid hsl(33, 100%, 98%);
+  z-index: 2;
+}
+
+.container-two {
+  width: 540px;
+  height: 510px;
+  border: none;
+  border-radius: 20px;
+  background-color: hsl(33, 100%, 98%);
+}
+
+.container-two h1 {
+  text-align: left;
+  padding-left: 40px;
+  padding-top: 8px;
+}
+
+.chart-container {
+  position: relative;
+  margin: auto;
+  width: 485px;
+  height: 250px;
+  cursor: pointer;
+}
+
+hr.horizontal {
+  width: 460px;
+  margin-top: 24px;
+  margin-bottom: 8px;
+  border: 1px solid hsl(27, 66%, 92%);
+}
+
+.summary {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.sum-one,
+.sum-two {
+  font-size: 18px;
+  color: hsl(28, 10%, 53%);
+}
+
+.sum-one {
+  width: 240px;
+  height: 100px;
+  text-align: left;
+  padding-left: 20px;
+}
+
+.sum-two {
+  width: 240px;
+  text-align: right;
+  height: 100px;
+  padding-right: 20px;
+  padding-top: 45px;
+}
+
+span.total {
+  font-size: 48px;
+  font-weight: 700;
+  color: hsl(25, 47%, 15%);
+}
+
+span.percentage {
+  font-weight: 700;
+  color: black;
+}
+
+.attribution {
+  padding-top: 8px;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 600px) {
+  .container-one {
+    width: 345px;
+    height: 100px;
+    border-radius: 10px;
+  }
+  .text {
+    width: 225px;
+    padding-left: 18px;
+  }
+  .text p {
+    font-size: 14px;
+  }
+
+  .text h1 {
+    font-size: 24;
+  }
+  .shape {
+    width: 120px;
+    height: 100px;
+  }
+  .circle-two {
+    height: 45px;
+    width: 45px;
+  }
+  .circle-one {
+    height: 45px;
+    width: 45px;
+  }
+  .container-two {
+    width: 345px;
+    height: 415px;
+  }
+  .container-two h1 {
+    padding-left: 18px;
+    font-size: 24px;
+  }
+  .chart-container {
+    width: 309px;
+    height: 200px;
+  }
+  hr.horizontal {
+    width: 309px;
+  }
+  .summary {
+    width: 345px;
+    margin-top: 8px;
+  }
+  .sum-one,
+  .sum-two {
+    width: 172.5px;
+    height: 90px;
+    font-size: 16px;
+  }
+  .sum-two {
+    padding-right: 18px;
+    padding-top: 16px;
+  }
+
+  span.total {
+    font-size: 32px;
+  }
+}

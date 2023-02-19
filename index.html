@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon.ico"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Frontend Mentor | Expenses chart component</title>
+  </head>
+
+  <body>
+    <div class="container-one">
+      <div class="text">
+        <p>My balance</p>
+        <h1>$921.48</h1>
+      </div>
+      <div class="shape">
+        <div class="circle-one"></div>
+        <div class="circle-two"></div>
+      </div>
+    </div>
+
+    <div class="container-two">
+      <h1>Spending - Last 7 days</h1>
+      <div class="chart-container">
+        <canvas id="myChart"></canvas>
+      </div>
+      <hr class="horizontal" />
+      <div class="summary">
+        <div class="sum-one">
+          <p>Total this month <span class="total">$478.33</span></p>
+        </div>
+        <div class="sum-two">
+          <p>
+            <span class="percentage">+2.4%</span> <br />
+            from last month
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Noor Rahmi</a>.
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
