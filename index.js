@@ -1,7 +1,7 @@
 const ctx = document.getElementById("myChart");
 
 async function fetchData() {
-  const url = "/data.json";
+  const url = "data.json";
   const response = await fetch(url);
   //wait until the request has been completed
   const datapoints = await response.json();
